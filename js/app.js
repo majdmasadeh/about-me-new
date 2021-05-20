@@ -26,7 +26,7 @@ function quizSuring (){
     
 
 function MYMAJOR(){
-    let mymajor = prompt('Iam a Singer ? yes or no'); 
+    let mymajor = prompt('Iam a Singer ? yes or no').toUpperCase(); 
 console.log(mymajor);
 if (mymajor==='YES' || mymajor==='Y')
 {alert(' Wrong ans.');}
@@ -39,7 +39,7 @@ MYMAJOR();
 
 
 function sport(){
-let sportQues=prompt('is majd like sport?(yes/y or no/n)');
+let sportQues=prompt('is majd like sport?(yes/y or no/n)').toUpperCase();
 console.log(sportQues);
 if (sportQues==='YES' || sportQues==='Y')
 {alert('correct ans.');
@@ -53,7 +53,7 @@ sport();
 
 
  function MYHOME (){
-    let myhome = prompt('do I live in Irbid ? yes or no');
+    let myhome = prompt('do I live in Irbid ? yes or no').toUpperCase();
     console.log(myhome)
     if (myhome==='YES' || myhome ==='Y')
 {alert(' correct ans.');
@@ -66,7 +66,7 @@ else{if (myhome==='NO' || myhome ==='N')
     MYHOME();
 
 function place(){
-let favPlace=prompt('is majds  favourite place Lebanon?(yes/y or no/n)');
+let favPlace=prompt('is majds  favourite place Lebanon?(yes/y or no/n)').toUpperCase();
 console.log(favPlace);
 if (favPlace==='YES' || favPlace==='Y')
 {alert('correct ans.');
@@ -79,7 +79,7 @@ else{
 place();
 
 function MYDRINK(){
-    let mydrink = prompt('Is American coffee my Favourite drink ? yes or no');
+    let mydrink = prompt('Is American coffee my Favourite drink ? yes or no').toUpperCase();
     console.log(mydrink);
     if (mydrink==='YES' || mydrink==='Y')
 {alert('correct ans.');
