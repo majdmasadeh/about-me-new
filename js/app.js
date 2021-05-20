@@ -3,6 +3,7 @@ let score = 0;
 var username = prompt("Please Enter your name").toUpperCase()
 alert ("Welcome"+username);
 alert('let\'s play a guessing game about me.');
+/*
 
 function quizSuring (){
     let sureQuestion = prompt('are you ready to have this quiz? if yes insert Y else insert N ').toUpperCase()
@@ -21,7 +22,7 @@ function quizSuring (){
             break;
     }
     }
-    quizSuring ();
+    quizSuring ();*/
     
 
 function MYMAJOR(){
@@ -49,44 +50,6 @@ else{if (sportQues==='NO' || sportQues==='N')
 sport();
 
 
-let animals = ['turtile', 'cat', 'dog'];
-function fAnimals(){
-let userAns = prompt('Guess What is my fav animal ? ');
-
-let flag = false;
-for (let t = 1; t < 3; t++) {
-    for (let f = 0; f < animals.length; f++) {
-        if (userAns == animals[f]) {
-            alert('You got it  ');
-           
-
-            flag = true;
-            score++;
-            return score;
-            break;
-        }
-
-
-    }
-    if (flag == true) { break; }
-    else {
-        alert(userAns + " Is a Wrong Answer Please try again ");
-        userAns = prompt('Try Again');
-
-    }
-}
-
-
-if (flag == false) {
-    alert('Try harder Next Time');
-    alert('The right answers is : ' + animals);
-    document.write('<br>');
-    document.write('my fav animal is answers is : ' + animals);
-
-}
-return animals;
-}
- fAnimals();
 
 
  function MYHOME (){
@@ -152,3 +115,42 @@ else{if (mydrink==='NO' || mydrink==='N')
         luckNum();
    
     
+        let animals = ['turtile', 'cat', 'dog'];
+        function fAnimals(){
+        let userAns = prompt('Guess What is my fav animal ? ');
+        
+        let flag = false;
+        for (let t = 1; t < 3; t++) {
+            for (let f = 0; f < animals.length; f++) {
+                if (userAns == animals[f]) {
+                    alert('You got it  ');
+                   
+        
+                    flag = true;
+                    score++;
+                    return score;
+                    break;
+                }
+        
+        
+            }
+            if (flag == true) { break; }
+            else {
+                alert(userAns + " Is a Wrong Answer Please try again ");
+                userAns = prompt('Try Again');
+        
+            }
+        }
+        
+        
+        if (flag == false) {
+            alert('Try harder Next Time');
+            alert('The right answers is : ' + animals);
+            document.write('<br>');
+            document.write('my fav animal is answers is : ' + animals);
+        
+        }
+        return animals;
+        }
+         fAnimals();
+        
