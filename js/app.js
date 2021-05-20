@@ -30,9 +30,9 @@ function MYMAJOR(){
 console.log(mymajor);
 if (mymajor==='YES' || mymajor==='Y')
 {alert(' Wrong ans.');}
-else{if (mymajor==='NO' || mymajor==='N')
+else if (mymajor==='NO' || mymajor==='N'){
     alert('correct Ans.');
-score=score+1}
+score=score+1;}
 
 }
 MYMAJOR();
@@ -94,7 +94,7 @@ else{if (mydrink==='NO' || mydrink==='N')
 
 
     function luckNum(){
-        for (let i = 1; i <=10; i++) {
+        for (let i = 1; i <5; i++) {
             let luckNum = prompt('please guess my luckNum ');
             if (luckNum >= 8) {
                 
@@ -120,10 +120,11 @@ else{if (mydrink==='NO' || mydrink==='N')
         let userAns = prompt('Guess What is my fav animal ? ');
         
         let flag = false;
-        for (let t = 1; t < 3; t++) {
+        for (let t = 1; t < 7; t++) {
             for (let f = 0; f < animals.length; f++) {
                 if (userAns == animals[f]) {
                     alert('You got it  ');
+                    console.log('You got it  ');
                    
         
                     flag = true;
@@ -137,6 +138,7 @@ else{if (mydrink==='NO' || mydrink==='N')
             if (flag == true) { break; }
             else {
                 alert(userAns + " Is a Wrong Answer Please try again ");
+                console.log(userAns + " Is a Wrong Answer Please try again ");
                 userAns = prompt('Try Again');
         
             }
@@ -144,8 +146,9 @@ else{if (mydrink==='NO' || mydrink==='N')
         
         
         if (flag == false) {
-            alert('Try harder Next Time');
+            
             alert('The right answers is : ' + animals);
+            console.log ('The right answers is : ' + animals);
             document.write('<br>');
             document.write('my fav animal is answers is : ' + animals);
         
@@ -153,4 +156,5 @@ else{if (mydrink==='NO' || mydrink==='N')
         return animals;
         }
          fAnimals();
-        
+        alert('you got ' +score +'/7');
+       
